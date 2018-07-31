@@ -1,0 +1,48 @@
+DataProductsWeek4
+========================================================
+author: Christel Veefkind
+date: 25-07-2018
+autosize: true
+
+Introduction
+========================================================
+
+The purpose of this assignment is to build a shiny application and an accompanying presentation.
+I have chosen to build an application with leaflet and shiny and build an interactive map and table.
+For this application I have made use of an open data set of monumental trees in the area of Haarlemmermeer, Netherlands.
+The mapdata is from mapbox.  
+
+
+
+
+
+The Application
+========================================================
+The application shows a map and histogram of a Tree set of an area in the Netherlands. The histograms shows the Species that are found
+in the area the maps shows at that time. The map can be panned and zoomed. The trees are clickable and show the species of the selected tree.
+A second tab of the application at table is created by the choices of the user. A type of tree and the range of years when the trees are planted.
+The table refreshes automatically. A basic search field is also available.
+
+
+Slide With Code
+========================================================
+This slide shows a smaple of the code how the radius of the circles on the map
+are calculated.
+
+```r
+JAAR_VAN_AANPLANT<- 1950
+radius <- (200-as.numeric(as.factor(JAAR_VAN_AANPLANT))*7)/3
+
+radius
+```
+
+```
+[1] 64.33333
+```
+This radius is used in the map as the size of the circle. In the application the JAAR_VAN_AANPLANT(year planted is variable)
+Conclusion
+========================================================
+
+The application shows what can be done with leaflet and shiny and datatable in a reasonable easy way.
+It is possible to include css and javascript to make it even more interactive.
+The app and its code can be found here:

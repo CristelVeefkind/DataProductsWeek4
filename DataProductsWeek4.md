@@ -40,6 +40,8 @@ radius
 [1] 64.33333
 ```
 This radius is used in the map as the size of the circle. In the application the JAAR_VAN_AANPLANT(year planted is variable)
+
+
 Conclusion
 ========================================================
 
